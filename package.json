@@ -1,0 +1,36 @@
+{
+  "name": "rayloading",
+  "version": "1.0.4",
+  "description": "loading components",
+  "main": "./lib/RayLoading.js",
+  "author": "ilex.h",
+  "license": "MIT",
+  "dependencies": {
+    "domtool": "^1.0.1",
+    "gh-pages": "^1.1.0"
+  },
+  "devDependencies": {
+    "ac-build": "^1.0.17",
+    "amos-build": "^1.1.x",
+    "eslint-config-ray": "^1.0.25",
+    "prop-types": "^15.6.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "eslint src tests",
+    "lint:fix": "npm run lint -- --fix",
+    "demo": "set NODE_ENV=development && webpack-dev-server --config webpack.config.demo.js",
+    "demo:build": "set NODE_ENV=production && webpack --config webpack.config.demo.js",
+    "gh-page": "ac-doc gh-page",
+    "build": "npm run clean && amos-run compile",
+    "pub": "npm run build && npm publish"
+  },
+  "keywords": [
+    "react ray loading"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}

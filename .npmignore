@@ -1,0 +1,10 @@
+node_modules/
+src/
+example/
+.vscode/
+.editorconfig
+.eslintignore
+.eslintrc
+.gitignore
+.jsbeautifyrc
+.stylelintrc.json
